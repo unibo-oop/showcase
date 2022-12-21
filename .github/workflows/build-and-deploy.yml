@@ -2,9 +2,6 @@ name: Build and deploy
 on:
   push:
     branches-ignore:
-      - 'autodelivery**'
-      - 'bump-**'
-      - 'renovate/**'
       - 'dependabot/**'
     paths-ignore:
       - 'README.md'
@@ -33,6 +30,14 @@ jobs:
         run: npm install
       - name: Build with hugo
         run: hugo
+      - name: Link Check
+        if: ${{ github.event_name != 'pull_request' }}
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.5.4
+        with:
+          args: public
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Deploy website
         if: ${{ github.event_name != 'pull_request' }}
         uses: JamesIves/github-pages-deploy-action@v4.4.1
@@ -40,3 +45,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: public
+
