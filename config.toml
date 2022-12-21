@@ -1,0 +1,33 @@
+baseURL = "https://unibo-oop.github.io/showcase"
+languageCode = "en-us"
+title = "OOP Projects showcase"
+Paginate = 1000
+googleAnalytics = ""
+theme = "showcase-hugo-theme"
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+
+# this setting should always be set to false, otherwise it will break the section navigation bar
+pluralizelisttitles = false
+
+[params]
+  author = "Programmazione ad Oggetti @ UniBo / Cesena"
+  description = "OOP Projects that looked good. Note: they may not be well-engineered"
+  message = "OOP Projects that looked good. Note: they may not be well-engineered! Use for fun, not as a basis for finding good projects"
+  hideAutoMenu = false
+
+  # Pagination options
+  paginate = 3
+  multipage = true
+
+  # Dark mode
+  darkMode = true
+
+[[menu.main]]
+  name = "External"
+  url = "https://danysk.github.io/"
+
+# [social]
+#   facebook = "https://facebook.com"
+#   twitter = "https://twitter.com"
+#   instagram = "https://instagram.com"
+#   linkedin = "https://linkedin.com"
