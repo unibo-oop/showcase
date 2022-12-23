@@ -5,7 +5,10 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^.github/workflows/*\\.[yY][aA]?[mM][lL]$"],
+      "fileMatch": [
+        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
+        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
+      ],
       "matchStrings": [
           "^\\s+hugo-version:\\s+'?\"?(?<version>\\d+(\\.\\d+)*)'?\"?"
       ],
