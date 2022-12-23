@@ -14,7 +14,21 @@
       ],
       "depNameTemplate": "gohugoio/hugo",
       "currentValueTemplate": "v{{{version}}}",
-      "packageNameTemplate": "https://github.com/gohugoio/hugo.git",
+      "packageNameTemplate": "gohugoio/hugo",
+      "datasourceTemplate": "github-tags",
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
+        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
+      ],
+      "matchStrings": [
+          "\\s+node-version:\\s+'?\"?(?<version>\\d+(\\.\\d+)*)'?\"?"
+      ],
+      "depNameTemplate": "node",
+      "currentValueTemplate": "v{{{version}}}",
+      "packageNameTemplate": "nodejs/node",
       "datasourceTemplate": "github-tags",
       "versioningTemplate": "docker"
     }
