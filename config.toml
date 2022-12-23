@@ -12,7 +12,7 @@ pluralizelisttitles = false
 [params]
   author = "Showcase of \"Programmazione ad Oggetti\" @ UniBo / Cesena"
   description = "OOP Projects that looked good. Note: they may be not well-engineered"
-  message = "OOP Projects that looked good. IMPORTANT NOTE: they may be not well-engineered! Use for fun, not as a basis for finding good projects (intended as \"projects that scored a good grade at the exam\")."
+  message = "OOP Projects that looked good. IMPORTANT NOTE: they may be not well-engineered! Use for fun, not as a basis for finding good projects (intended as \"projects that scored a good grade at the exam\"). If you created a project and it does not appear here, it does not mean it was not good enough to qualify, the selection is NOT COMPLETE!"
   hideAutoMenu = false
 
   # Pagination options
