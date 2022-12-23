@@ -10,7 +10,7 @@
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
       ],
       "matchStrings": [
-          "^\\s+hugo-version:\\s+'?\"?(?<version>\\d+(\\.\\d+)*)'?\"?"
+          "^\\s+hugo-version:\\s+'?\"?(?<version>\\d+(\\.\\d+)*)'?\"?$"
       ],
       "depNameTemplate": "gohugoio/hugo",
       "currentValueTemplate": "v{{{version}}}",
