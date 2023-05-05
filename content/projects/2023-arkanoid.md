@@ -1,5 +1,5 @@
 ---
-title: Caesena
+title: Arkanoid
 date: 2023-05-05
 subtitle: 2023
 link: https://github.com/unibo-oop-projects/Student-Project-OOP22-Balzoni-Castiglioni-Desiderio-Foschi-Ruggeri-arkanoid/raw/master/arkanoid-all.jar
