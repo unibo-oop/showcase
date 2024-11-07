@@ -34,7 +34,7 @@ jobs:
       - name: Link Check
         if: ${{ github.event_name != 'pull_request' }}
         id: lychee
-        uses: lycheeverse/lychee-action@v2.0.2
+        uses: lycheeverse/lychee-action@v2.1.0
         with:
           args: public
           fail: true
