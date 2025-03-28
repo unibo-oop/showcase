@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://unibo-oop.github.io/showcase/projects/2025-fargoal/</loc>
+    <lastmod>2025-03-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://unibo-oop.github.io/showcase/</loc>
-    <lastmod>2025-02-13T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/</loc>
-    <lastmod>2025-02-13T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/2025-puyo-blast/</loc>
     <lastmod>2025-02-13T00:00:00+00:00</lastmod>
