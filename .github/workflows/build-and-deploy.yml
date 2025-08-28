@@ -37,7 +37,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2.6.1
         with:
           args: >-
-            --accept 302
+            --accept '200, 302'
             public
           fail: true
         env:
