@@ -23,7 +23,7 @@ jobs:
         with:
           hugo-version: '0.124.1'
           extended: true
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 18.4.0
           cache: 'npm'
