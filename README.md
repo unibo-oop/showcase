@@ -39,6 +39,9 @@ image: https://example.com/screenshot.png
 ## Local development
 
 ```bash
+# Initialize the theme submodule
+git submodule update --init --recursive
+
 # Install Node dependencies (PostCSS / Tailwind)
 npm install
 
@@ -48,6 +51,8 @@ hugo server --disableFastRender
 
 Requires [Hugo extended](https://gohugo.io/installation/) ≥ 0.124.1.
 
+> Alternatively, clone with submodules from the start: `git clone --recurse-submodules`.
+
 ## Deployment
 
-Every push to `main` triggers the `build-and-deploy` workflow, which builds the site with Hugo and pushes the `public/` directory to the `gh-pages` branch, from which GitHub Pages serves the site.
+The `build-and-deploy` workflow runs on pushes to most branches, but ignores pushes that only modify `README.md`, `CHANGELOG.md`, or `LICENSE`. It builds the site with Hugo, and for non-pull-request runs it pushes the `public/` directory to the `gh-pages` branch, from which GitHub Pages serves the site.
