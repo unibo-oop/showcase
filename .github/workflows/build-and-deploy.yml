@@ -31,8 +31,13 @@ jobs:
         run: npm install
       - name: Build with hugo
         run: hugo
+      - name: Find if secrets are available
+        id: secrets
+        uses: DanySK/are-secrets-available@1.0.0
+        with:
+          secrets: ${{ toJson(secrets) }}
       - name: Link Check
-        if: ${{ github.event_name != 'pull_request' || contains('unibo-oop/', github.event.pull_request.head.repo) }}
+        if: steps.secrets.outputs.has-secrets
         id: lychee
         uses: lycheeverse/lychee-action@v2.7.0
         with:
@@ -41,7 +46,7 @@ jobs:
             public
           fail: true
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy website
         if: ${{ github.event_name != 'pull_request' }}
         uses: JamesIves/github-pages-deploy-action@v4.8.0
