@@ -32,7 +32,7 @@ jobs:
       - name: Build with hugo
         run: hugo
       - name: Link Check
-        if: ${{ github.event_name != 'pull_request' }}
+        if: ${{ github.event_name != 'pull_request' || contains('unibo-oop/', github.event.pull_request.head.repo) }}
         id: lychee
         uses: lycheeverse/lychee-action@v2.7.0
         with:
