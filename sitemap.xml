@@ -2,14 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://unibo-oop.github.io/showcase/projects/2026-j-rogue/</loc>
+    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://unibo-oop.github.io/showcase/</loc>
-    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/</loc>
-    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://unibo-oop.github.io/showcase/projects/2026-scat/</loc>
+    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/2026-puzzle-rogue/</loc>
     <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://unibo-oop.github.io/showcase/projects/2025-oe/</loc>
+    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/2025-lastcrown/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
@@ -49,6 +58,9 @@
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/2025-fargoal/</loc>
     <lastmod>2025-03-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://unibo-oop.github.io/showcase/projects/2026-inv/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/2025-puyo-blast/</loc>
     <lastmod>2025-02-13T00:00:00+00:00</lastmod>
@@ -181,7 +193,5 @@
   </url><url>
     <loc>https://unibo-oop.github.io/showcase/projects/2020-simple-natural-selection-simulator/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://unibo-oop.github.io/showcase/projects/2025-oe/</loc>
   </url>
 </urlset>
