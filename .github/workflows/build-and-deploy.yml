@@ -36,6 +36,14 @@ jobs:
         uses: DanySK/are-secrets-available@1.0.0
         with:
           secrets: ${{ toJson(secrets) }}
+      - name: Run Hugo server
+        if: steps.secrets.outputs.has-secrets
+        run: |
+          nohup hugo server & echo $! > /tmp/hugo.pid
+          for i in $(seq 1 60); do
+            curl -fsS http://localhost:1313/showcase/ > /dev/null || sleep 1;
+          done
+          cat /tmp/hugo.log
       - name: Link Check
         if: steps.secrets.outputs.has-secrets
         id: lychee
@@ -43,7 +51,7 @@ jobs:
         with:
           args: >-
             --accept '200, 302'
-            public
+            http://localhost:1313/showcase/
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
