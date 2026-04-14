@@ -43,7 +43,7 @@ jobs:
         with:
           args: >-
             --accept '200, 302'
-            --root-dir .
+            --root-dir ${{ github.workspace }}/public
             .
           workingDirectory: public
           fail: true
