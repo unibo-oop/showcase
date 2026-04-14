@@ -43,8 +43,6 @@ jobs:
         with:
           args: >-
             --accept '200, 302'
-            --root-dir .
-            .
           workingDirectory: public
           fail: true
         env:
