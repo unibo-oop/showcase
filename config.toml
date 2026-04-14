@@ -17,7 +17,7 @@ pluralizelisttitles = false
 
   # Pagination options
   paginate = 30
-  multipage = true
+  multipage = false
 
   # Dark mode
   darkMode = true
