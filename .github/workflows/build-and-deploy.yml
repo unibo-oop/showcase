@@ -39,11 +39,18 @@ jobs:
       - name: Run Hugo server
         if: steps.secrets.outputs.has-secrets
         run: |
-          nohup hugo server & echo $! > /tmp/hugo.pid
+          nohup hugo server 2>&1 & echo $! > /tmp/hugo.pid
           for i in $(seq 1 60); do
-            curl -fsS http://localhost:1313/showcase/ > /dev/null || sleep 1;
+            if curl -fsS http://localhost:1313/showcase/ > /dev/null; then
+              echo "Hugo server is ready"
+              break
+            fi
+            sleep 1
           done
-          cat /tmp/hugo.log
+          curl -fsS http://localhost:1313/showcase/ > /dev/null || {
+              echo "Hugo server did not become ready"
+              exit 1
+          }
       - name: Link Check
         if: steps.secrets.outputs.has-secrets
         id: lychee
