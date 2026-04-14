@@ -10,8 +10,8 @@
     <span
       class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
     >
-      {{ if .Site.Social.facebook }}
-      <a class="text-gray-500" href="{{ .Site.Social.facebook }}">
+      {{ if .Site.Params.Social.facebook }}
+      <a class="text-gray-500" href="{{ .Site.Params.Social.facebook }}">
         <svg
           fill="currentColor"
           stroke-linecap="round"
@@ -25,8 +25,8 @@
           ></path>
         </svg>
       </a>
-      {{ end }} {{ if .Site.Social.twitter }}
-      <a class="ml-3 text-gray-500" href="{{ .Site.Social.twitter }}">
+      {{ end }} {{ if .Site.Params.Social.twitter }}
+      <a class="ml-3 text-gray-500" href="{{ .Site.Params.Social.twitter }}">
         <svg
           fill="currentColor"
           stroke-linecap="round"
@@ -40,8 +40,8 @@
           ></path>
         </svg>
       </a>
-      {{ end }} {{ if .Site.Social.instagram }}
-      <a class="ml-3 text-gray-500" href="{{ .Site.Social.instagram }}">
+      {{ end }} {{ if .Site.Params.Social.instagram }}
+      <a class="ml-3 text-gray-500" href="{{ .Site.Params.Social.instagram }}">
         <svg
           fill="none"
           stroke="currentColor"
@@ -57,8 +57,8 @@
           ></path>
         </svg>
       </a>
-      {{ end }} {{ if .Site.Social.linkedin }}
-      <a class="ml-3 text-gray-500" href="{{ .Site.Social.linkedin }}">
+      {{ end }} {{ if .Site.Params.Social.linkedin }}
+      <a class="ml-3 text-gray-500" href="{{ .Site.Params.Social.linkedin }}">
         <svg
           fill="currentColor"
           stroke="currentColor"
