@@ -43,6 +43,7 @@ jobs:
         with:
           args: >-
             --accept '200, 302'
+            --base public
             public
           fail: true
         env:
