@@ -43,8 +43,9 @@ jobs:
         with:
           args: >-
             --accept '200, 302'
-            --base public
-            public
+            --root-dir .
+            .
+          workingDirectory: public
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
