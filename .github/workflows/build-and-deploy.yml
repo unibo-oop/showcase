@@ -36,9 +36,6 @@ jobs:
         uses: DanySK/are-secrets-available@1.0.0
         with:
           secrets: ${{ toJson(secrets) }}
-      - name: Build with hugo for link check
-        if: steps.secrets.outputs.has-secrets
-        run: hugo --baseURL / --destination /tmp/public-check
       - name: Link Check
         if: steps.secrets.outputs.has-secrets
         id: lychee
@@ -46,9 +43,9 @@ jobs:
         with:
           args: >-
             --accept '200, 302'
-            --root-dir /tmp/public-check
+            --root-dir ${{ github.workspace }}/public
             .
-          workingDirectory: /tmp/public-check
+          workingDirectory: ${{ github.workspace }}/public
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
