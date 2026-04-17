@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/showcase/projects/2026-j-rogue/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/showcase/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/showcase/projects/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/showcase/projects/2025-turbochess/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/showcase/projects/2026-j-rogue/</loc>
     <lastmod>2026-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/showcase/projects/2026-scat/</loc>
@@ -66,9 +69,6 @@
     <lastmod>2025-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/showcase/projects/2025-relario/</loc>
-    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/showcase/projects/2025-turbochess/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/showcase/projects/2024-gym-life/</loc>
