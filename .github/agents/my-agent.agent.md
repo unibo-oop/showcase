@@ -20,7 +20,9 @@ This agent:
 title: ACRONYM
 date: YYYY-MM-DD
 subtitle: YYYY
-link: DIRECT_DOWNLOAD_URLhttps://bitbucket.org/danysk/oop19-grassetti-giacomo-massone-lorenzo-tonelli-luca-yafg/downloads/oop19-yafg-all.jar
+link: DIRECT_DOWNLOAD_URL
 image: YYYY-ACRONYM.png
 ---
 ```
+
+8. Ensures that all links function correctly
